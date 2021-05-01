@@ -1,0 +1,85 @@
+.chatListItemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 70px;
+}
+
+.chatListItemContainer:hover {
+  background-color: #F5F5F5;
+}
+
+.chatListItemAvatar {
+  width: 50px;
+  height: 50px;
+  border: 50%;
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+}
+
+.chatListItemLines {
+  height: 100%;
+  border-bottom: 1px solid #eee;
+  padding-right: 1rem;
+  margin-left: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 0;
+}
+
+.chatListItemLines .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.chatListItemLines .line .name {
+  font-size: 17px;
+  color: #131313;
+}
+
+.chatListItemLines .line .date {
+  font-size: 12px;
+  color: #999;
+}
+
+.chatListItemLines .line .lastMsg {
+  font-size: 14px;
+  color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.chatListItemLines .line .lastMsg p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+/*# sourceMappingURL=ChatListItem.css.map */

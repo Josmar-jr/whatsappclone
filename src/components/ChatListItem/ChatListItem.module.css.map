@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "ChatListItem.module.scss"
+    ],
+    "names": [],
+    "file": "ChatListItem.module.css"
+}
