@@ -1,0 +1,116 @@
+.chatWindowContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatWindowContainer .header {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatWindowContainer .header {
+  .headerInfo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .headerProfile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 1rem;
+  }
+
+  .headerName {
+    font-size: 1.0625rem;
+    color: #000;
+  }
+
+  .headerButtons {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+
+    .btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  }
+}
+
+.chatWindowContainer .body {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #e5ddd5;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+}
+
+.chatWindowContainer .footer {
+  height: 62px;
+  display: flex;
+  align-items: center;
+
+  .pre {
+    display: flex;
+    margin: 0 1rem;
+
+    .btn {
+      cursor: pointer;
+
+      &:first-child {
+        margin-right: 0.5rem;
+        display: none;
+      }
+      &:first-child .active {
+        display: block;
+      }
+    }
+  }
+
+  .inputArea {
+    flex: 1;
+
+    input {
+      width: 100%;
+      height: 40px;
+      border: 0;
+      outline: 0;
+      border-radius: 20px;
+      font-size: 1rem;
+      color: #4a4a4a;
+      padding-left: 1rem;
+    }
+  }
+  .pos {
+    display: flex;
+    margin: 0 1rem;
+  }
+}
+
+.emojiArea {
+  height: 200px;
+  overflow-y: hidden;
+  transition: all ease 0.3s;
+}
+
+aside.emoji-picker-react {
+  width: auto;
+  background: none;
+}
+
+.emoji-picker-react .emoji-group:before {
+  background: none;
+}

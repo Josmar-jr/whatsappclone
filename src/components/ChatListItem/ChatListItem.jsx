@@ -2,13 +2,16 @@ import React from 'react';
 
 import './ChatListItem.scss';
 
-export function ChatListItem() {
+export function ChatListItem({onClick, active, data}) {
   return (
-      <div className="chatListItemContainer">
-          <img className="chatListItemAvatar" src="cat-profile.png" alt=""/>
+      <div 
+        className={`chatListItemContainer ${active?'active':''}`}
+        onClick={onClick}           
+      >
+          <img className="chatListItemAvatar" src={data.img} alt=""/>
           <div className="chatListItemLines">
               <div className="line">
-                <div className="name">Contact 1</div>
+                <div className="name">{data.title}</div>
                 <div className="date">19:00</div>
               </div>
               <div className="line">
